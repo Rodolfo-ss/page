@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas: "start start start start"
+        "sobre sobre sobre sobre"
+        "frutas frutas frutas frutas"
+        "clientes clientes clientes clientes"
+        "images images images images"
+        "final final final final";
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.start {
+    grid-area: start;
+}
+
+.start {
+    background-image: url(./desktop/image-header.jpg);
+    width: 100%;
+    height: 98vh;
+    background-size: 100% 100%;
+}
+
+.start .container {
+    display: flex;
+    margin: 20px;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header h2 {
+    display: flex;
+    font-size: 70px;
+    margin: 100px;
+    color: #fff;
+    justify-content: center;
+    font-family: 'fraunces';
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.start h1 {
+    font-size: 48px;
+    font-family: 'barlow';
+    transition: 0.9s;
+}
+
+.start a:hover h1 {
+    color: deepskyblue;
+}
+
+.start nav ul li {
+    display: inline;
+    padding: 9px;
+    font-family: 'barlow';
+}
+
+.start .container li a {
+    padding: 10px 10px;
+    transition: 0.4 ease-in-out;
+}
+
+.start .container li a:hover {
+    background-color: #fff;
+    color: deepskyblue;
+    border-radius: 20px;
+}
+
+.start nav ul li a {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.start .container .btn:hover {
+    color: deepskyblue;
+}
+
+.start .container .btn {
+    color: black;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 35px;
+}
+
+.start .seta {
+    margin-left: 928px;
+    width: 45px;
+    display: flex;
+    position: absolute;
+    animation: seta 0.6s infinite alternate;
+}
+
+@-webkit-keyframes seta {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9;
+    }
+}
+
+.sobre .image{
+    width: 100%;
+    height: 100%;
+}
+
+.sobre .image.direita {
+    background: url(./desktop/image-transform.jpg)  center center no-repeat;
+    background-size: cover;
+}
+
+.sobre .image.esquerda {
+    background: url(./desktop/image-stand-out.jpg)  center center no-repeat;
+    background-size: cover;
+}
+
+.sobre {
+    grid-area: sobre;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+}
+
+.sobre .texto {
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre .texto h4{
+    font-size: 55px;
+    font-family: 'fraunces';
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.sobre .texto p{
+    font-family: 'barlow';
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.sobre .texto a{
+    text-decoration: underline 3px yellow;
+}
+
+.sobre .texto .le{
+    text-decoration: underline 3px hsl(7, 74%, 77%) ;
+}
+
+.frutas {
+    grid-area: frutas;
+}
+
+.frutas{
+    grid-area: frutas;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.frutas .frut img{
+    width: 100%;
+}
+
+.frutas .frut-grafic{
+    background: url(./desktop/image-graphic-design.jpg) center center no-repeat;
+    background-size: 100% 100%;
+    height: 90vh;
+}
+
+.frutas .frut-photo{
+    background: url(./desktop/image-photography.jpg)center center no-repeat;
+    background-size: 100%  100%;
+    height: 90vh;
+}
+
+.frutas .frut-grafic h5 {
+    font-family: 'fraunces';
+    font-size: 40px;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-weight: 900;
+    top: 600px;
+    color: hsl(167, 40%, 24%);
+}
+
+.frutas .frut-photo h5 {
+    font-family: 'fraunces';
+    font-size: 40px;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-weight: 900;
+    top: 600px;
+    color: hsl(210, 47%, 31%);
+}
+
+.frutas .frut-grafic p{
+    font-family: 'barlow';
+    color: hsl(167, 40%, 24%);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    top: 650px;
+    line-height: 34px;
+}
+
+.frutas .frut-photo p{
+    font-family: 'barlow';
+    color: hsl(167, 40%, 24%);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    top: 650px;
+    line-height: 34px;
+}
+
+.clientes {
+    grid-area: clientes;
+}
+
+.clientes h6{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 4px;
+    margin:180px;
+    margin-bottom: 20px;
+}
+
+.clientes .clients img{
+    border-radius: 100%;
+    width: 190px;
+    display: flex;
+   padding: 50px;
+   margin-left: 100px;
+   
+}
+
+.clientes .clients{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.clientes .clients .emily{
+    margin: 70px;
+}
+
+.clientes .clients .tom{
+    margin: 70px;
+}
+
+.clientes .clients .jen{
+    margin: 70px;
+} 
+
+.clientes .clients .emily p{
+    font-family: 'barlow';
+    font-size: 20px;
+    margin: 20px;
+    color: hsl(213, 9%, 39%);
+}
+
+.clientes .clients .tom p{
+    font-family: 'barlow';
+    font-size: 20px;
+    margin: 20px;
+    color: hsl(213, 9%, 39%);
+}
+
+.clientes .clients .jen p{
+    font-family: 'barlow';
+    font-size: 20px;
+    margin: 20px;
+    color: hsl(213, 9%, 39%);
+}
+
+.clientes .clients a{
+    font-size: 20px;
+    font-family: 'fraunces';
+    font-weight: 900;
+}
+
+.clientes .clients p:last-child{
+    font-size: 15px;
+    color: hsl(210, 4%, 67%);
+}
+
+.images {
+    grid-area: images;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.images .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.images a:hover img{
+    height: 100%;
+    transition: 0.4s;
+} 
+
+.images a:hover img{
+    opacity: 0.7;
+} 
+
+.final {
+    grid-area: final;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+    background-color: hsl(167, 46%, 67%);
+    color: hsl(168, 33%, 27%);
+}
+
+.final h3{
+    font-family: 'poppins';
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+.final .menu{
+    display: flex;
+    justify-content: center;
+}
+.final .menu p{
+    font-size: 20px;
+   margin: 50px;
+    top: 20px;
+    margin-bottom: 30px;
+}
+
+.final .midia a{
+    margin: 20px;
+}
+
+.final .midia{
+    margin: 90px;
+}
+
+
